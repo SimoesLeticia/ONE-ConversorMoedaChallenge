@@ -26,16 +26,19 @@ O usuário escolhe entre diferentes opções de conversão e insere o valor dese
 - Requisições dinâmicas para taxas atualizadas
 - Desserialização do JSON de resposta
 
-## 🛡Organização do Código
+## Organização do Código
 
 ```
 src/
-├── Main.java                       # Interface
-├── model/ExchangeResponse.java     # Mapeamento da resposta JSON
-├── service/CurrencyConverter.java  # Lógica principal de conversão
-├── util/HttpClientUtil.java        # Utilitário para requisições
-├── util/ApiKeyReader.java          # Leitura segura da API KEY
-├── API-KEY.txt                     # (Vazio por segurança, você preenche com sua chave)
+├── Main.java                      # Interface
+├── model/
+│   └── ExchangeResponse.java      # Mapeamento da resposta JSON
+├── service/
+│   └── CurrencyConverter.java     # Lógica principal de conversão
+├── util/
+│   ├── HttpClientUtil.java        # Utilitário para requisições
+│   └── ApiKeyReader.java          # Leitura segura da API KEY
+└── API-KEY.txt                    # (Vazio por segurança, você preenche com sua chave)
 ```
 
 ## Como Executar
